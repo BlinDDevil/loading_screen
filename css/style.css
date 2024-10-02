@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parent {
+  display: grid;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.parent div {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255 225 0);
+  margin: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  animation-name: loading;
+  animation-duration: .6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.two {
+  animation-delay: .2s;
+}
+
+.three {
+  animation-delay: .4s;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+  }
+}
+
+.loading-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+}
+
+p {
+  display: inline-block;
+  color: rgb(255 255 0);
+  font-size: 40px;
+  margin: 5px;
+  animation-name: loading;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-transform: uppercase;
+}
+
+.o {
+  animation-delay: .2s;
+}
+
+.a {
+  animation-delay: .4s;
+}
+
+.d {
+  animation-delay: .6s;
+}
+
+.i {
+  animation-delay: .8s;
+}
+
+.n {
+  animation-delay: 1s;
+}
+
+.g {
+  animation-delay: 1.2s;
+}
